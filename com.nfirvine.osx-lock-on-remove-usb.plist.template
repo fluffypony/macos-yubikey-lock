@@ -9,8 +9,8 @@
     <key>ProgramArguments</key>
     <array>
       <string>osx-lock-on-remove-usb</string>
-      <string>1050</string>
-      <string>0120</string>
+      <string>{{vendor_id}}</string>
+      <string>{{product_id}}</string>
     </array>
     <key>RunAtLoad</key>
     <true/>

@@ -12,14 +12,14 @@ function lock {
 
 while true; do
   prev_state=$state
-  if $(system_profiler SPUSBDataType | tr '\n' '\t' | egrep "Security Key by Yubico:\\s+Product ID: 0x$prod_id\\s+Vendor ID: 0x$vendor_id" > /dev/null 2>&1); then
+  if $(system_profiler SPUSBDataType | tr '\n' '\t' | egrep "Product ID: 0x$prod_id\\s+Vendor ID: 0x$vendor_id" > /dev/null 2>&1); then
     state="attached"
   else
     state="detached"
   fi
-  #echo $prev_state, $state
+  echo $prev_state, $state
   if [ "$prev_state" = "attached" -a "$state" = "detached" ]; then
-    #echo locking
+    echo locking
     lock
   fi
   sleep 1
