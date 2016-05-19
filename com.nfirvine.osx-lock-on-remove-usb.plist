@@ -3,12 +3,12 @@
 <plist version="1.0">
   <dict>
     <key>Label</key>
-    <string>com.nfirvine.osx-lock-on-remove-yubikey</string>
+    <string>com.nfirvine.osx-lock-on-remove-usb</string>
     <key>Program</key>
-    <string>/usr/local/bin/osx-lock-on-remove-yubikey.sh</string>
+    <string>/usr/local/bin/osx-lock-on-remove-usb.sh</string>
     <key>ProgramArguments</key>
     <array>
-      <string>osx-lock-on-remove-yubikey</string>
+      <string>osx-lock-on-remove-usb</string>
       <string>1050</string>
       <string>0120</string>
     </array>
