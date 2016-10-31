@@ -1,4 +1,7 @@
 #!/bin/sh -eux
+if [ $# -lt 2 ]; then
+	echo 'usage: install.sh <vendor_id> <product_id>'
+fi
 vendor_id=$1
 product_id=$2
 out=com.nfirvine.osx-lock-on-remove-usb-${vendor_id}-${product_id}.plist
