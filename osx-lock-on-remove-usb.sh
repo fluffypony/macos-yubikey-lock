@@ -7,7 +7,7 @@ prev_state="unknown"
 state="unknown"
 
 function lock {
-  open -a /System/Library/Frameworks/ScreenSaver.framework/Versions/A/Resources/ScreenSaverEngine.app
+  open -a /System/Library/CoreServices/ScreenSaverEngine.app
 }
 
 while true; do
