@@ -2,8 +2,8 @@
 
 Lock the screen on macOS when your YubiKey is removed
 
-Copyright Riccardo Spagni, 2021
-Copyright Erik Inge Bolsø, 2020
+Copyright Riccardo Spagni, 2021  
+Copyright Erik Inge Bolsø, 2020  
 Original copyright Nick Irvine, 2015-2016
 
 ## Installation
