@@ -1,6 +1,6 @@
 # macOS Lock-on-YubiKey
 
-Lock the screen on OS X when your YubiKey is removed
+Lock the screen on macOS when your YubiKey is removed
 
 Copyright Riccardo Spagni, 2021
 Copyright Erik Inge Bolsø, 2020
