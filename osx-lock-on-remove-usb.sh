@@ -9,7 +9,7 @@ function lock {
 
 while true; do
   prev_state=$state
-  if $(ioreg -p IOUSB -l -w 0 | egrep "YubiKey" > /dev/null 2>&1); then
+  if $(ioreg -p IOUSB -l -w 0 | egrep -i "(YubiKey|Yubico)" > /dev/null 2>&1); then
     state="attached"
   else
     state="detached"
