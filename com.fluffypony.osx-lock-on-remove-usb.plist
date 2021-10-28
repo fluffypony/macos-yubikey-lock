@@ -5,7 +5,7 @@
     <key>Label</key>
     <string>com.nfirvine.osx-lock-on-remove-usb</string>
     <key>Program</key>
-    <string>/usr/local/bin/osx-lock-on-remove-usb.sh</string>
+    <string>/opt/homebrew/bin/osx-lock-on-remove-usb.sh</string>
     <key>ProgramArguments</key>
     <array>
       <string>osx-lock-on-remove-usb</string>
