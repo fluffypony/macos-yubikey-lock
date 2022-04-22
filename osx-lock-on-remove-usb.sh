@@ -9,13 +9,13 @@ function lock {
 
 while true; do
   prev_state=$state
-  if $(ioreg -p IOUSB -l -w 0 | egrep "YubiKey" > /dev/null 2>&1); then
+  if ioreg -p IOUSB -l -w 0 | grep -E "YubiKey" > /dev/null 2>&1; then
     state="attached"
   else
     state="detached"
   fi
   echo $prev_state, $state
-  if [ "$prev_state" = "attached" -a "$state" = "detached" ]; then
+  if [ "$prev_state" = "attached" ] && [ "$state" = "detached" ]; then
     echo locking
     lock
   fi
